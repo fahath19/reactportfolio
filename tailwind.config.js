@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const Animatecss=require('animated-tailwindcss');
 
 module.exports= {
   content: [
