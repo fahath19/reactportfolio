@@ -4,7 +4,7 @@ import {userimg} from '../Constant/'
 import pdf from '../pdf/resume2.pdf'
 const About = () => {
   return (
-    <div>
+    <div id='about'>
        <div className='flex items-center justify-center mt-3' >
         <FaUserAlt className='text-3xl'/>
         <h2 className='ml-4 text-4xl font-bold'>About <span className='text-violet-800'> Me</span> </h2>

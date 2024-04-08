@@ -1,0 +1,7 @@
+/* FOR MOBILE RESPONSIVE NAVBAR */
+.menu{
+    right: -450px;
+}
+.active{
+    right: 0;
+}

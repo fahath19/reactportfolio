@@ -6,6 +6,7 @@ import Skill from './COMPONENTS/Skill'
 import Myeducation from './COMPONENTS/Myeducation'
 import Contact from './COMPONENTS/Contact'
 import './animationstyling/ani.css'
+import Footer from './COMPONENTS/Footer'
 const Body = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Body = () => {
        <Skill/>
        <Myeducation/>
        <Contact/>
+       <Footer/>
     </div>
   )
 }
