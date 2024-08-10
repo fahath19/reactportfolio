@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.imagecontainer:hover .overlay{
+    top: 30%;
+
+}
+
+* {
+    scrollbar-color:  blue;
+  }
+ @layer components{
+    .resumebtn:hover .nexticon{
+          @apply  translate-x-2 transition-all duration-700 ease-out	 
+    }
+} 
 
 
 

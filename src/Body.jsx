@@ -7,6 +7,7 @@ import Myeducation from './COMPONENTS/Myeducation'
 import Contact from './COMPONENTS/Contact'
 import './animationstyling/ani.css'
 import Footer from './COMPONENTS/Footer'
+import Project from './COMPONENTS/Project'
 const Body = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Body = () => {
        <About/>
        <Skill/>
        <Myeducation/>
+       <Project/>
        <Contact/>
        <Footer/>
     </div>

@@ -37,7 +37,7 @@ const Skill = () => {
 
 
           <div className="icon rounded-lg text-white w-3/12 px-4  lg:px-8  py-3   flex flex-col items-center  border m-8 ">
-              <img src={tailwindic} alt="img" className='lg:w-4/12 w-12/12mt-4 '/>
+              <img src={tailwindic} alt="img" className='lg:w-5/12 w-12/12 mt-5 '/>
               <h2 className='text-center  mt-2'>Tailwind</h2>
           </div>
 

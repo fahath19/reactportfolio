@@ -1,7 +1,9 @@
 import React from 'react'
 import { FaUserAlt } from "react-icons/fa";
-import {userimg} from '../Constant/'
-import pdf from '../pdf/resume2.pdf'
+import pdf from '../SKILL ICON/cv.pdf'
+import userimg from '../PERSONAL IMG/user.jpg'
+import { MdNavigateNext } from "react-icons/md";
+
 const About = () => {
   return (
     <div id='about'>
@@ -11,8 +13,8 @@ const About = () => {
        </div>
 
        <div className='flex justify-evenly mt-20 items-center lg:flex-row flex-col'>
-          <div className="img  lg:w-[20%] w-7/12 ">
-             <img src={userimg} alt="image" className='rounded-[50%]'/>
+          <div className="img  md:w-[350px] md:h-[350px] w-[280px] h-[280px]">
+             <img src={userimg} alt="USER IMAGE" className=' object-fit w-[100%] h-[100%] rounded-[50%]'/>
           </div>
           <div className='info  lg:w-4/12 w-8/12 lg:m-0 mt-10 '>
             <h2 className='text-3xl lg:text-4xl font-bold leading-6 mb-4'>I'm Abdul Bahad</h2>
@@ -22,10 +24,10 @@ const About = () => {
              I am very passionate about improving my coding skills & developing applications & websites. 
               Working for myself to improve my skills.
              </p>
-             <p className='mt-2'>bahadabdul539@gmail.com</p>
-             <p className='mt-2'>TamilNadu, India - 622504</p>
+             <p className='mt-2'><span className='text-blue-600 font-bold mr-1'>Email:</span> bahadabdul539@gmail.com</p>
+             <p className='mt-2'> <span className='text-blue-600 font-bold mr-1'>Place:</span>TamilNadu, India - 622504</p>
 
-             <button className='mt-5 bg-violet-800 text-white p-2 px-8 text-2xl rounded '><a href={pdf} download="resume">Resume</a></button>
+             <button className='resumebtn mt-5 bg-violet-800  hover:bg-violet-900 text-white p-2 px-8 text-2xl rounded  '><a href={pdf} download="resume" className='flex items-center'>Resume <MdNavigateNext className=' nexticon mt-1'/> </a></button>
        </div>
     </div>
     </div>

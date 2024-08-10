@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
-import { MdOutlineCancelPresentation } from "react-icons/md";
+import { BsXLg } from "react-icons/bs";
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 const Header = () => {
   const [burger,setburger]=useState(0);
  function handleburger(){
@@ -25,21 +27,37 @@ const Header = () => {
 
 
   return (
-    <div className=' md:flex bg-black text-gray-300 py-2 md:items-center md:justify-around fixed w-full top-0 left-0  '>
-       <div className='flex justify-around'>
+    <div id='' className=' md:flex bg-black text-gray-300 md:py-2 md:items-center md:justify-around fixed w-full top-0 left-0 py-4 z-30 '>
+       <div className='flex justify-between'>
        <h2 className='text-4xl font-sans pl-4 '>Abdul</h2>
-       <button className='navicon text-5xl mr-9 lg:hidden ' onClick={handleburger}>{burger?<MdOutlineCancelPresentation />:<RxHamburgerMenu/>}</button>
+       <button className='navicon text-4xl mr-9 lg:hidden ' onClick={handleburger}>{burger?<BsXLg className='text-[2rem]' />:<RxHamburgerMenu/>}</button>
 
        </div>
        
 
-        <ul className={`nav menu md:flex md:ml-20   md:relative lg:relative absolute  md:bg-transparent w-8/12 lg:w-auto text-center top-[60px]  md:-right-[0px] lg:top-0 h-[100%]   lg:h-auto  duration-150`}>
-        <div className='lee lg:flex  h-[100vh] bg-slate-500 lg:h-auto  lg:bg-transparent cursor-pointer '>
-          <li className='p-3 text-2xl hover:text-blue-400  lg:border-none border-b-2 border-gray-400 '>Home</li>
-          <li className='p-3 text-2xl hover:text-blue-400 border-b- border-gray-400' > <a href="about">About</a> </li>
-          <li className='p-3 text-2xl hover:text-blue-400 border-b- border-gray-400'>Skills</li>
-          <li className='p-3 text-2xl hover:text-blue-400 border-b- border-gray-400'>Project</li>
-          <li className='p-3 text-2xl hover:text-blue-400  lg:border-none border-b-2 border-gray-400'>Contact</li>
+        <ul className={`nav menu md:flex md:ml-20   md:relative lg:relative absolute  md:bg-transparent w-8/12 lg:w-auto text-center top-[72px]  md:-right-[0px] lg:top-0 h-[100%]   lg:h-auto  duration-150`}>
+        <div className='lee lg:flex  h-[100vh] bg-slate-700 lg:h-auto  lg:bg-transparent cursor-pointer '>
+         <Link to='home'  smooth={true}  activeClass="active"
+  duration={500}>
+         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>Home</li>
+         </Link> 
+         <Link to='about' smooth={true}  
+  duration={500} offset={-80}>
+         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>About</li>
+         </Link> 
+         <Link to='education' smooth={true}
+  duration={500} offset={-90}>
+         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>Education</li>
+         </Link> 
+         <Link to='contact' smooth={true}
+  duration={500}>
+         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>Contact</li>
+         </Link> 
+         <Link to='project' smooth={true}
+  duration={500} offset={-90}>
+         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>Project</li>
+         </Link> 
+        
         </div>
 
         </ul>
