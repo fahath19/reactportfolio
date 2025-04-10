@@ -22,10 +22,10 @@ const Contact = () => {
             <input type="hidden" name="access_key" value="5b235dda-35a8-4fb1-932b-424f41b7a619"
 />
 
-            <input type="text" name='uname' placeholder='Enter Your Name'  className='uname bg-transparent border-2 lg:w-4/12 w-9/12 p-2 border-gray-300 rounded mt-3 'required />
-            <input type="email" name='email' placeholder='Enter Your Email' className='email bg-transparent border-2 lg:w-4/12 w-9/12 p-2 border-gray-300 rounded mt-3'  required/>
-            <textarea type="text" name='message' placeholder='Enter Your Message' className='msg bg-transparent  border-2 lg:w-4/12 w-9/12 h-64 p-2 border-gray-300 rounded mt-3 resize-none'  required/>
-            <button className='submitbtn border-2 text-white border-gray-300 mt-6 p-4 mb-4 rounded-md hover:shadow-[inset_13rem_0_0_0] hover:shadow-blue-400 duration-[400ms,700ms] transition-[color,box-shadow] hover:text-black ' >Submit Message</button>
+            <input type="text" name='uname' placeholder='Your Name'  className='uname bg-transparent border-2 lg:w-4/12 w-9/12 p-2 border-green-800 rounded mt-3 'required />
+            <input type="email" name='email' placeholder=' Your Email' className='email bg-transparent border-2 lg:w-4/12 w-9/12 p-2 border-green-800 rounded mt-3'  required/>
+            <textarea type="text" name='message' placeholder=' Your Message' className='msg bg-transparent  border-2  border-green-800 lg:w-4/12 w-9/12 h-64 p-2 border-green-600rounded mt-3 resize-none'  required/>
+            <button className='submitbtn border-2 text-white border-green-800 mt-6 p-4 mb-4 rounded-md hover:shadow-[inset_13rem_0_0_0] hover:shadow-blue-400 duration-[400ms,700ms] transition-[color,box-shadow] hover:text-black ' >Send</button>
 
            
           </form>

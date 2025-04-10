@@ -1,61 +1,62 @@
-import React, { useState } from 'react'
-import { RxHamburgerMenu } from "react-icons/rx";
+import React, { useEffect, useState } from 'react'
 import { BsXLg } from "react-icons/bs";
 import { Link, animateScroll as scroll } from 'react-scroll';
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
-  const [burger,setburger]=useState(0);
- function handleburger(){
-      let nav=document.querySelector('.nav');
+     const [hamburgerclick, sethamclick]=useState(false)
+   function hamburgerbtn(){
+        sethamclick(!hamburgerclick);
+   }
 
-         setburger(!burger)
-         if(!burger){
-             //document.querySelector('.nav').style.right='0';
-              nav.classList.add('active')
-             setburger(!burger);
+   useEffect(()=>{
+       let outsidehandler=()=>{
+              sethamclick(false);
+       }
 
-         }
-         else{
-          
-         // document.querySelector('.nav').style.right='-2000px';
-           nav.classList.remove('active');
-         }
- }
-
-
-
+       document.addEventListener('mousedown',outsidehandler);
+           
+        return(()=>
+             document.removeEventListener("mousedown",outsidehandler)
+       )
+   })
 
 
   return (
-    <div id='' className=' md:flex bg-black text-gray-300 md:py-2 md:items-center md:justify-around fixed w-full top-0 left-0 py-4 z-30 '>
-       <div className='flex justify-between'>
-       <h2 className='text-4xl font-sans pl-4 '>Abdul</h2>
-       <button className='navicon text-4xl mr-9 lg:hidden ' onClick={handleburger}>{burger?<BsXLg className='text-[2rem]' />:<RxHamburgerMenu/>}</button>
+    <div id='' className=' md:flex bg-black items-center text-gray-300 md:py-2 md:items-center md:justify-around fixed w-full top-0 left-0 py-4 z-30 '>
+       <div className='flex  justify-between'>
+       <h2 className='text-2xl font-sans pl-8  '>Abdul</h2>
+       <button className=' text-3xl mr-9 lg:hidden ' onClick={()=>hamburgerbtn()}>{hamburgerclick ? <BsXLg/>:<RxHamburgerMenu/> } </button>
 
        </div>
+
        
 
-        <ul className={`nav menu md:flex md:ml-20   md:relative lg:relative absolute  md:bg-transparent w-8/12 lg:w-auto text-center top-[72px]  md:-right-[0px] lg:top-0 h-[100%]   lg:h-auto  duration-150`}>
-        <div className='lee lg:flex  h-[100vh] bg-slate-700 lg:h-auto  lg:bg-transparent cursor-pointer '>
+        <ul className=''>
+        <div className={ ` ${hamburgerclick ? "visible ":"invisible  duration-75  "} 
+     bg-black/40 backdrop-blur-none border-2 border-green-400 lg:border-none
+
+        
+        lg:flex lg:w-auto w-[155px]   h-auto  bg-blue-400  lg:bg-transparent cursor-pointer absolute lg:relative lg:right-auto lg:top-auto right-7 top-[94%]  rounded-[8px] text-white lg:visible` }>
          <Link to='home'  smooth={true}  activeClass="active"
   duration={500}>
-         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>Home</li>
+         <li className='p-2 text-[1.4rem] hover:text-blue-400 mx-4  lg:border-none   '>Home</li>
          </Link> 
          <Link to='about' smooth={true}  
   duration={500} offset={-80}>
-         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>About</li>
+         <li className='p-2 text-[1.4rem] hover:text-blue-400 mx-4  lg:border-none   '>About</li>
          </Link> 
          <Link to='education' smooth={true}
   duration={500} offset={-90}>
-         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>Education</li>
+         <li className='p-2 text-[1.4rem] hover:text-blue-400 mx-4  lg:border-none   '>Education</li>
          </Link> 
          <Link to='contact' smooth={true}
   duration={500}>
-         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>Contact</li>
+         <li className='p-2 text-[1.4rem] hover:text-blue-400 mx-4  lg:border-none   '>Contact</li>
          </Link> 
          <Link to='project' smooth={true}
   duration={500} offset={-90}>
-         <li className='p-3 text-2xl hover:text-blue-400 mx-4  lg:border-none border-b   '>Project</li>
+         <li className='p-2 text-[1.4rem] hover:text-blue-400 mx-4  lg:border-none   '>Project</li>
          </Link> 
         
         </div>

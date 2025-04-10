@@ -3,7 +3,10 @@ import av1 from '../PERSONAL IMG/indian-man-smiling-cheerful-expression-closeup-
 import { FaLinkedin,FaGithub } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { Cursor, useTypewriter,  } from 'react-simple-typewriter';
-import personimg from '../PERSONAL IMG/businessman-on-isolated-png.png'
+import personimg2 from '../PERSONAL IMG/businessman-on-isolated-png.png'
+import personimg from '../PERSONAL IMG/WhatsApp Image 2025-04-08 at 7.54.20 PM.jpeg'
+import userimg from '../PERSONAL IMG/bahad.jpg'
+
 const Indroduce = () => {
 
   const [typing]=useTypewriter({
@@ -13,8 +16,8 @@ const Indroduce = () => {
     deleteSpeed:40
   })
   return (
-    <div id='home' className='flex text-white   bg-black h-[100vh] lg:justify-around lg:items-center flex-col lg:flex-row mt-6  '>
-      <div className='p-10 md:p-auto pl-6 lg:pl-[5rem]  md:w-[600px]'>
+    <div id='home' className='flex text-white   bg-black h-[100vh] lg:justify-around lg:items-center  lg:flex-row  flex-col-reverse   '>
+      <div className='p-10 md:p-auto pl-6 lg:pl-[5rem]  md:w-[600px] '>
        <h2 className='text-5xl   lg:text-7xl mt-14 lg:mt-10 font-sans lg:font-semibold font-mediun '>Hi There,</h2>
        <h2 className='text-4xl lg:text-6xl mt-4 font-semibold'>I'm Abdul <span className='text-[#0018A8]'>Bahad</span> </h2>
 
@@ -29,9 +32,9 @@ const Indroduce = () => {
            </ul>
        </div>
       </div>
-      <div className=' lg:w-[380px] lg:h-[350px] w-[250px]  h-[250px] mx-auto md:mt-10 lg:m-0   rounded-[50%] relative 2 border-[20px] border-[#0018A8] bg-[#00CCFF]  lg:mt-10  mt-10'>
+      <div className=' lg:w-[380px] lg:h-[350px] w-[250px]  h-[250px] mx-auto md:mt-10 lg:m-0   rounded-[50%] relative 2    lg:mt-10  mt-20'>
 
-      <div className='md:w-[450px] md:h-[450px] w-[280px] h-[280px]  absolute mx-auto md:-bottom-0 md:-left-[2.8rem] -left-7 bottom-0'>
+      <div className=' md:w-[450px] md:h-[450px] w-[280px] h-[280px]  absolute mx-auto md:-bottom-0 md:-left-[2.8rem] -left-7 '>
       <img src={personimg} alt="avimage"  className='rounded-[50%]   w-[100%] h-[100%]'/>
 
       </div>
