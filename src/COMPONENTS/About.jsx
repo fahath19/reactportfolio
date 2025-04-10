@@ -5,7 +5,7 @@ import user2img from '../PERSONAL IMG/bahad.jpg'
 import userimg from '../PERSONAL IMG/bahad1.jpeg'
 
 import { MdNavigateNext } from "react-icons/md";
-
+import resumepdf from '../PERSONAL IMG/finalatsresume.pdf'
 const About = () => {
   return (
     <div id='about ' className='bg-black pt-[10px] '>
@@ -29,7 +29,7 @@ const About = () => {
              <p className='mt-2'><span className='text-blue-600 font-bold mr-1'>Email:</span> bahadabdul539@gmail.com</p>
              <p className='mt-2'> <span className='text-blue-600 font-bold mr-1'>Place:</span>TamilNadu, India - 622504</p>
 
-             <button className='resumebtn mt-5 bg-green-800  hover:bg-green-700 text-white p-2 px-8 text-2xl rounded  '><a href={pdf} download="resume" className='flex items-center'>Resume <MdNavigateNext className=' nexticon mt-1'/> </a></button>
+             <button className='resumebtn mt-5 bg-green-800  hover:bg-green-700 text-white p-2 px-8 text-2xl rounded  '><a href={resumepdf} download="resume" className='flex items-center'>Resume <MdNavigateNext className=' nexticon mt-1'/> </a></button>
        </div>
     </div>
     </div>

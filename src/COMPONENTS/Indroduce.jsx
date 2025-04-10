@@ -4,7 +4,7 @@ import { FaLinkedin,FaGithub } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { Cursor, useTypewriter,  } from 'react-simple-typewriter';
 import personimg2 from '../PERSONAL IMG/businessman-on-isolated-png.png'
-import personimg from '../PERSONAL IMG/WhatsApp Image 2025-04-08 at 7.54.20 PM.jpeg'
+import personimg from '../PERSONAL IMG/1000014721.jpg'
 import userimg from '../PERSONAL IMG/bahad.jpg'
 
 const Indroduce = () => {
@@ -34,7 +34,7 @@ const Indroduce = () => {
       </div>
       <div className=' lg:w-[380px] lg:h-[350px] w-[250px]  h-[250px] mx-auto md:mt-10 lg:m-0   rounded-[50%] relative 2    lg:mt-10  mt-20'>
 
-      <div className=' md:w-[450px] md:h-[450px] w-[280px] h-[280px]  absolute mx-auto md:-bottom-0 md:-left-[2.8rem] -left-7 '>
+      <div className=' md:w-[390px] md:h-[390px] w-[280px] h-[280px]  absolute mx-auto md:-bottom-0 md:-left-[2.8rem] -left-7 '>
       <img src={personimg} alt="avimage"  className='rounded-[50%]   w-[100%] h-[100%]'/>
 
       </div>
