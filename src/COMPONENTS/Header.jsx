@@ -36,7 +36,7 @@ const Header = () => {
         <div className={ ` ${hamburgerclick ? "visible ":"invisible  duration-75  "} 
      bg-black/40 backdrop-blur-none border-2 border-green-400 lg:border-none
 
-        lg:flex lg:w-auto w-[155px]   h-auto  lg:bg-transparent cursor-pointer absolute lg:relative lg:right-auto lg:top-auto right-7 top-[94%]  rounded-[8px] text-white lg:visible` }>
+        lg:flex lg:w-auto w-[155px]   h-auto  lg:bg-transparent cursor-pointer absolute lg:relative lg:right-auto lg:top-auto right-7 top-[94%]  rounded-[8px] text-white lg:visible md:py-auto py-3` }>
          <Link to='home'  smooth={true}  activeClass="active"
   duration={500}>
          <li className='p-2 text-[1.4rem] hover:text-blue-400 mx-4  lg:border-none   '>Home</li>

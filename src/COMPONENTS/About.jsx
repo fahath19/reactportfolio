@@ -3,9 +3,13 @@ import { FaUserAlt } from "react-icons/fa";
 import pdf from '../SKILL ICON/cv.pdf'
 import user2img from '../PERSONAL IMG/bahad.jpg'
 import userimg from '../PERSONAL IMG/bahad1.jpeg'
-
 import { MdNavigateNext } from "react-icons/md";
-import resumepdf from '../PERSONAL IMG/finalatsresume.pdf'
+import resumepdf from '../PERSONAL IMG/Resume (18).pdf'
+// import resumepdf  from '../pdf/bahad_resume.pdf'
+import personalimg from '../PERSONAL IMG/abdulbahad.png'
+
+
+
 const About = () => {
   return (
     <div id='about ' className='bg-black pt-[10px] '>
@@ -16,7 +20,7 @@ const About = () => {
 
        <div className='flex justify-evenly mt-20 items-center lg:flex-row flex-col'>
           <div className="img  md:w-[270px] md:h-[270px] mt-6 w-[280px] h-[280px]">
-             <img src={userimg} alt="USER IMAGE" className=' object-fit w-[100%] h-[100%] rounded-[50%]'/>
+             <img src={personalimg} alt="USER IMAGE" className=' object-fit w-[100%] h-[100%] rounded-[50%]'/>
           </div>
           <div className='info  text-white lg:w-4/12 w-8/12 lg:m-0 mt-10 '>
             <h2 className='text-3xl lg:text-4xl font-bold leading-6 mb-4'>I'm Abdul Bahad</h2>

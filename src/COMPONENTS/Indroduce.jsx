@@ -6,11 +6,12 @@ import { Cursor, useTypewriter,  } from 'react-simple-typewriter';
 import personimg2 from '../PERSONAL IMG/businessman-on-isolated-png.png'
 import personimg from '../PERSONAL IMG/1000014721.jpg'
 import userimg from '../PERSONAL IMG/bahad.jpg'
+import abdulbahad from '../PERSONAL IMG/bahadgardern.jpg'
 
 const Indroduce = () => {
 
   const [typing]=useTypewriter({
-    words:['Frontend Developer','ui designer'],
+    words:['Frontend Developer','Mern  Developer','Backend Developer'],
     loop:{},
     typeSpeed:120,
     deleteSpeed:40
@@ -19,7 +20,7 @@ const Indroduce = () => {
     <div id='home' className='flex text-white   bg-black h-[100vh] lg:justify-around lg:items-center  lg:flex-row  flex-col-reverse   '>
       <div className='p-10 md:p-auto pl-6 lg:pl-[5rem]  md:w-[600px] '>
        <h2 className='text-5xl   lg:text-7xl mt-14 lg:mt-10 font-sans lg:font-semibold font-mediun '>Hi There,</h2>
-       <h2 className='text-4xl lg:text-6xl mt-4 font-semibold'>I'm Abdul <span className='text-[#0018A8]'>Bahad</span> </h2>
+       <h2 className='text-4xl lg:text-6xl mt-4 font-semibold'>I'm Abdul <span className=''>Bahad</span> </h2>
 
        <p className='text-2xl lg:text-4xl mt-3 font-medium -z-30 '>i am into <span className='text-[#00CCFF] text-[1.5rem] lg:text-4xl '>{typing}</span> <span className=' -z-30'
        > <Cursor cursorStyle='' /> </span> </p>
@@ -35,7 +36,7 @@ const Indroduce = () => {
       <div className=' lg:w-[380px] lg:h-[350px] w-[250px]  h-[250px] mx-auto md:mt-10 lg:m-0   rounded-[50%] relative 2    lg:mt-10  mt-20'>
 
       <div className=' md:w-[390px] md:h-[390px] w-[280px] h-[280px]  absolute mx-auto md:-bottom-0 md:-left-[2.8rem] -left-7 '>
-      <img src={personimg} alt="avimage"  className='rounded-[50%]   w-[100%] h-[100%]'/>
+      <img src={abdulbahad} alt="avimage"  className='rounded-[50%]   w-[100%] h-[100%]'/>
 
       </div>
       </div>

@@ -9,9 +9,12 @@ import nodejs from '../SKILL ICON/icons8-nodejs-48.png';
 import mongo from '../SKILL ICON/MongoDB.png';
 import express from '../SKILL ICON/icons8-express-js-64.png';
 import api from '../SKILL ICON/cloud-api.png';
+
 import project1 from '../PERSONAL IMG/Screenshot (3) - Copy.png'
 import project2 from '../PERSONAL IMG/Screenshot 2025-04-08 192711.png'
 import project3 from '../PERSONAL IMG/ecomerce.png'
+import project0 from '../PERSONAL IMG/quickcart.png'
+import project4 from '../PERSONAL IMG/portfolio.png'
 
 
 let skilldata=[
@@ -82,11 +85,18 @@ let skilldata=[
 ]
 
 export let projectinfo=[
-
+  {
+    projecttitle:"QuickCart",
+    projectimg:project0,
+    projectdesc:" QuickCart is a  Ecommerce Website Built Using React Js And Hook And Data Management"
+    ,
+            view:"https://quickcaartt.netlify.app/",
+            code:"https://github.com/fahath19/quickcart"
+},
     {
             projecttitle:"Man Fasion Ecommerce",
             projectimg:project3,
-            projectdesc:"Man Fasion Ecommerce Website Built Using React Js And Hook And Data Management For Using",
+            projectdesc:"Man Fasion Ecommerce Website Built Using React Js And Hook And Data Management ",
             view:"https://fahath19.github.io/ecom/",
             code:"https://github.com/fahath19/ECOMMERCE"
 
@@ -94,7 +104,7 @@ export let projectinfo=[
     {
         projecttitle:"Snackify",
         projectimg:project1,
-        projectdesc:"Snackify Website Built Using React Js And Hook And Data Management For Using"
+        projectdesc:"Snackify Website Built Using HTML And CSS ,JAVASCRIPT"
         ,
             view:"https://snackify.netlify.app/",
             code:"https://github.com/fahath19/Foodapp"
@@ -104,8 +114,18 @@ export let projectinfo=[
     projectimg:project2,
     projectdesc:"Todo List Ecommerce Website Built Using React Js And Hook And Data Management For Using"
     ,
-            view:"https://github.com/fahath19/Reactsocialmedia",
-            code:"https://fahath19.github.io/Reactsocialmedia/"
+            code:"https://github.com/fahath19/Reactsocialmedia",
+            view:"https://fahath19.github.io/Reactsocialmedia/"
+}
+
+,
+{
+    projecttitle:"Portfolio",
+    projectimg:project4,
+    projectdesc:"Portfolio  Website Built Using React Js And Hook And Data Management "
+    ,
+            code:"https://github.com/fahath19/Reactsocialmedia"
+           
 }
 ]
 export default  skilldata;
