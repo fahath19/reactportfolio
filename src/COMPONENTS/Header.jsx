@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <div id='' className=' md:flex bg-black items-center text-gray-300 md:py-2 md:items-center md:justify-around fixed w-full top-0 left-0 py-4 z-30 '>
        <div className='flex  justify-between'>
-       <h2 className='text-2xl font-sans pl-8  '>bsc computer science</h2>
+       <h2 className='text-2xl font-sans pl-8  '>abdul</h2>
        <button className=' text-3xl mr-9 lg:hidden ' onClick={()=>hamburgerbtn()}>{hamburgerclick ? <BsXLg/>:<RxHamburgerMenu/> } </button>
 
        </div>
